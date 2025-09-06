@@ -1,0 +1,91 @@
+body, h1, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url(../images/unisel.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+}
+
+nav {
+  width: 100%;
+  height: 65px;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.image-container {
+  background-color: white;
+  padding: 1px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.image-container img {
+  width: 57px;
+  height: auto;
+}
+
+.label {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+ul {
+  list-style-type: none;
+  position: absolute;
+  right: 20px;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+  border: 1px solid #ffffff94;
+  border-radius: 10px;
+  transition: 0.6s ease;
+  font-size: 19px;
+}
+
+ul li a:hover {
+  background-color: rgb(247, 242, 242);
+  color: black;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 250px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
